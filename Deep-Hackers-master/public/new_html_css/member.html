@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>profile</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: profile;
+		--web-view-id: profile;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: profile;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#profile {
+		position: absolute;
+		width: 1536px;
+		height: 720px;
+		background-color: rgba(243,241,240,1);
+		overflow: hidden;
+		--web-view-name: profile;
+		--web-view-id: profile;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#Rectangle_1 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1 {
+		filter: drop-shadow(0px 12px 42px rgba(0, 0, 0, 0.102));
+		position: absolute;
+		overflow: visible;
+		width: 896px;
+		height: 600px;
+		left: 63px;
+		top: 123.36px;
+	}
+	#Rectangle_2 {
+		fill: rgba(255,188,75,1);
+	}
+	.Rectangle_2 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 339px;
+		height: 147px;
+		left: 69px;
+		top: 34px;
+	}
+	#Rectangle_3 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_3 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 561px;
+		height: 557px;
+		left: 891px;
+		top: 117.36px;
+	}
+	#Rectangle_4 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 336px;
+		height: 66px;
+		left: 912px;
+		top: 521.392px;
+	}
+	#Rectangle_5 {
+		fill: rgba(255,119,119,1);
+	}
+	.Rectangle_5 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		height: 127px;
+		left: 69px;
+		top: 627px;
+	}
+	#Sync_s {
+		left: 114px;
+		top: 635px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#YouTubeParty {
+		left: 90px;
+		top: 50px;
+		position: absolute;
+		overflow: visible;
+		width: 223px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(0,0,0,1);
+	}
+	#Chat_ {
+		left: 946.739px;
+		top: 137.675px;
+		position: absolute;
+		overflow: visible;
+		width: 85px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(0,0,0,1);
+	}
+	#Rectangle_7 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_7 {
+		filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 478px;
+		height: 335px;
+		left: 912px;
+		top: 190.501px;
+	}
+	#Rectangle_8 {
+		fill: rgba(255,119,119,1);
+	}
+	.Rectangle_8 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 174px;
+		height: 127px;
+		left: 1263px;
+		top: 527px;
+	}
+	#Send {
+		left: 1281px;
+		top: 535px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Rectangle_9 {
+		fill: rgba(255,119,119,1);
+	}
+	.Rectangle_9 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		height: 127px;
+		left: 69px;
+		top: 627px;
+	}
+	#Sync_s {
+		left: 114px;
+		top: 635px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="member.js"></script>
+</head>
+<body>
+                  <div>
+                  <div id="player"></div>
+                
+                    <a style = "position:absolute; left:120px; top: 640px; z-index: 1000; font-size: 25px; color:white" href="#" id="sync">Sync</a>
+                    <a href="#" id="pause"></a>
+                <a href="#" id="resume"></a>
+              </div>
+                
+              <div id="messages"></div>
+
+              <div>
+                  <form id="message-form">
+                      <input style = "position:absolute; left: 950px; top: 550px; z-index: 100;" name="message" placeholder="Enter Message..." autocomplete="off">
+                      <button style = "position:absolute; left:1280px; top: 545px; z-index: 100; font-size: 24px; border: none; background-color: #FF7777; color: white;">Send</button>
+                  </form>
+                  <script id="message-template" type="text/html">
+                      <div>
+                          <p>{{username}}<br>{{message}}<br><h6>{{createdAt}}</h6></p>
+                          </div>
+                  </script>
+              </div>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="/js/chat.js"></script>
+    
+<div id="profile">
+	<svg class="Rectangle_1">
+		<rect id="Rectangle_1" rx="25" ry="25" x="0" y="0" width="770" height="474">
+		</rect>
+	</svg>
+	<svg class="Rectangle_2">
+		<rect id="Rectangle_2" rx="37.5" ry="37.5" x="0" y="0" width="267" height="75">
+		</rect>
+	</svg>
+	<svg class="Rectangle_3">
+		<rect id="Rectangle_3" rx="25" ry="25" x="0" y="0" width="489" height="485">
+		</rect>
+	</svg>
+	<svg class="Rectangle_4">
+		<rect id="Rectangle_4" rx="25" ry="25" x="0" y="0" width="336" height="66">
+		</rect>
+	</svg>
+	<svg class="Rectangle_5">
+		<rect id="Rectangle_5" rx="27.5" ry="27.5" x="0" y="0" width="144" height="55">
+		</rect>
+	</svg>
+	<div id="Sync_s">
+		<span>Sync</span>
+	</div>
+	<div id="YouTubeParty">
+		<span>YouTubeParty</span>
+	</div>
+	<div id="Chat_">
+		<span>Chat </span>
+	</div>
+	<svg class="Rectangle_7">
+		<rect id="Rectangle_7" rx="25" ry="25" x="0" y="0" width="448" height="305">
+		</rect>
+	</svg>
+	<svg class="Rectangle_8">
+		<rect id="Rectangle_8" rx="27.5" ry="27.5" x="0" y="0" width="102" height="55">
+		</rect>
+	</svg>
+	<div id="Send">
+	</div>
+	<svg class="Rectangle_9">
+		<rect id="Rectangle_9" rx="27.5" ry="27.5" x="0" y="0" width="144" height="55">
+		</rect>
+	</svg>
+	<div id="Sync_s">
+	</div>
+</div>
+</body>
+</html>

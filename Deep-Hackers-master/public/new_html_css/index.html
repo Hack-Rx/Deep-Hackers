@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube Party</title>
+    </head>
+    <style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: profile;
+		--web-view-id: profile;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: profile;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#profile {
+		position: absolute;
+		width: 1536px;
+		height: 720px;
+		background-color: rgba(243,241,240,1);
+		overflow: hidden;
+		--web-view-name: profile;
+		--web-view-id: profile;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#Rectangle_2 {
+		fill: rgba(255,188,75,1);
+	}
+	.Rectangle_2 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 339px;
+		height: 147px;
+		left: 69px;
+		top: 34px;
+	}
+	#Rectangle_3 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_3 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 478px;
+		height: 513px;
+		left: 59px;
+		top: 180px;
+	}
+	#YouTubeParty {
+		left: 90px;
+		top: 50px;
+		position: absolute;
+		overflow: visible;
+		width: 223px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(0,0,0,1);
+	}
+	#Join_as_Host {
+		left: 165.739px;
+		top: 200.958px;
+		position: absolute;
+		overflow: visible;
+		width: 193px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(0,0,0,1);
+	}
+	#Rectangle_4 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_4 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 462px;
+		height: 513px;
+		left: 502px;
+		top: 180px;
+	}
+	#Join_as_Member {
+		left: 572.739px;
+		top: 200.958px;
+		position: absolute;
+		overflow: visible;
+		width: 250px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(0,0,0,1);
+	}
+	#Display_Name {
+		left: 100px;
+		top: 285px;
+		position: absolute;
+		overflow: visible;
+		width: 303px;
+		height: 47px;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(0,0,0,1);
+	}
+	#Display_Name_n {
+		left: 537px;
+		top: 285px;
+		position: absolute;
+		overflow: visible;
+		width: 303px;
+		height: 47px;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(0,0,0,1);
+	}
+	#Line_1 {
+		opacity: 0.58;
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		width: 270px;
+		height: 1px;
+		left: 126.5px;
+		top: 254.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_2 {
+		opacity: 0.55;
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_2 {
+		overflow: visible;
+		position: absolute;
+		width: 276px;
+		height: 1px;
+		left: 559.5px;
+		top: 254.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Room {
+		left: 100px;
+		top: 394px;
+		position: absolute;
+		overflow: visible;
+		width: 303px;
+		height: 47px;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(0,0,0,1);
+	}
+	#Room_r {
+		left: 537px;
+		top: 394px;
+		position: absolute;
+		overflow: visible;
+		width: 303px;
+		height: 47px;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(0,0,0,1);
+	}
+	#Component_3__1 {
+		position: absolute;
+		width: 188px;
+		height: 58px;
+		left: 157px;
+		top: 525px;
+		overflow: visible;
+	}
+	#Rectangle_5 {
+		fill: rgba(255,119,119,1);
+	}
+	.Rectangle_5 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 260px;
+		height: 130px;
+		left: 0px;
+		top: 0px;
+	}
+	#Component_2__1 {
+		position: absolute;
+		width: 188px;
+		height: 58px;
+		left: 603px;
+		top: 524px;
+		overflow: visible;
+	}
+	#Rectangle_7 {
+		fill: rgba(255,119,119,1);
+	}
+	.Rectangle_7 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 260px;
+		height: 130px;
+		left: 0px;
+		top: 0px;
+	}
+	#Create {
+		left: 214px;
+		top: 538px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(243,236,236,1);
+	}
+	#Join {
+		left: 675px;
+		top: 538px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Tahoma;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(243,236,236,1);
+	}
+</style>
+    <body>
+        <div>
+            <h1></h1>
+            <form action="/host.html">
+                <label>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input style = "position:relative; left:15px; top: 330px; z-index: 100;" type="text" name="username" placeholder="Display name" required autocomplete="off">
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input style = "position:relative; right: 185px; top: 440px; z-index: 100;" type="text" name="room" placeholder="Room" required autocomplete="off">
+               <button style = "position:relative; right:240px; top: 540px; z-index: 100; font-size: 24px; border: none; background-color: #FF7777; color: white;">Create</button>
+               
+                
+            </form>
+        </div>
+        <div>
+                <form action="/member.html">
+                    <label></label>
+                    <input style = "position:relative; left:540px; top: 300px; z-index: 100;" type="text" name="username" placeholder="Display name" required autocomplete="off">
+                    <label></label>
+                    <input style = "position:relative; left:380px; top: 420px; z-index: 100;" type="text" name="room" placeholder="Room" required autocomplete="off">
+                     <button style = "position:relative; left:350px; top: 510px; z-index: 100; font-size: 24px; border: none; background-color: #FF7777; color: white;">Join</button>
+                </form>
+            </div>
+        <svg class="Rectangle_2">
+		<rect id="Rectangle_2" rx="37.5" ry="37.5" x="0" y="0" width="267" height="75">
+		</rect>
+	</svg>
+	<svg class="Rectangle_3">
+		<rect id="Rectangle_3" rx="25" ry="25" x="0" y="0" width="406" height="441">
+		</rect>
+	</svg>
+	<div id="YouTubeParty">
+		<span>YouTubeParty</span>
+	</div>
+	<div id="Join_as_Host">
+		<span>Join as Host</span>
+	</div>
+	<svg class="Rectangle_4">
+		<rect id="Rectangle_4" rx="25" ry="25" x="0" y="0" width="390" height="441">
+		</rect>
+	</svg>
+	<div id="Join_as_Member">
+		<span>Join as Member</span>
+	</div>
+	<div id="Display_Name">
+		<span>Display Name</span>
+	</div>
+	<div id="Display_Name_n">
+		<span>Display Name</span>
+	</div>
+	<svg class="Line_1" viewBox="0 0 270 1">
+		<path id="Line_1" d="M 0 0 L 270 0">
+		</path>
+	</svg>
+	<svg class="Line_2" viewBox="0 0 276 1">
+		<path id="Line_2" d="M 0 0 L 276 0">
+		</path>
+	</svg>
+	<div id="Room">
+		<span>Room</span>
+	</div>
+	<div id="Room_r">
+		<span>Room</span>
+	</div>
+	<div id="Component_3__1" class="Component_3___1">
+		<svg class="Rectangle_5">
+			<rect id="Rectangle_5" rx="25" ry="25" x="0" y="0" width="188" height="58">
+			</rect>
+		</svg>
+	</div>
+	<div id="Component_2__1" class="Component_2___1">
+		<svg class="Rectangle_7">
+			<rect id="Rectangle_7" rx="25" ry="25" x="0" y="0" width="188" height="58">
+			</rect>
+		</svg>
+	</div>
+	<div id="Create">
+	</div>
+	<div id="Join">
+	</div>
+    </body>
+</html>
