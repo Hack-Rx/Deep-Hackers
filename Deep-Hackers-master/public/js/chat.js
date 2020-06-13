@@ -97,7 +97,7 @@ var tag = document.createElement('script');
 
  var video = {
     status: null,
-    url:null,
+    url:'ZKYkCMoNPLE',
     change:false
   }
   
