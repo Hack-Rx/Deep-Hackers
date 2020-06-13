@@ -32,7 +32,21 @@ socket.on('Video', (message) => {
     if(video.status=='play'){
         player.seekTo(video.time, true)
         player.playVideo()
+        player.loadVideoById({
+            'videoId': video.url,
+            'startSeconds': video.time
+        })
     }
+    if(video.change==true){
+        console.log(typeof({
+            videoId: video.url
+        } ))
+        player.loadVideoById({
+            'videoId': video.url
+        })
+        video.change=false
+    }
+
 })
 
 
@@ -73,7 +87,7 @@ var tag = document.createElement('script');
    player = new YT.Player('player', {
      height: '390',
      width: '640',
-     videoId: 'M7lc1UVf-VE',
+     videoId: 'ZKYkCMoNPLE',
      events: {
        'onReady': onPlayerReady
        }
@@ -83,8 +97,8 @@ var tag = document.createElement('script');
 
  var video = {
     status: null,
-    time: 0,
-    newUser: false
+    url:null,
+    change:false
   }
   
 
@@ -145,7 +159,27 @@ document.getElementById('sync').onclick = function() {
 
 };
 
+document.getElementById('new-video').onclick = function() {
+    const URL = document.querySelector('#VideoURL').value
+    video.url=youtube_parser(URL)
+    video.change=true
+    console.log(video.url)
+    console.log(typeof(video.url))
+    socket.emit('newVideo', video, (error) => {
+        if(error) {
+            return console.log(error)
+        }
 
+        console.log('Message Delivered')
+    })
+
+};
+
+function youtube_parser(url){
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+    var match = url.match(regExp);
+    return (match&&match[7].length==11)? match[7] : false;
+}
 
 
 
