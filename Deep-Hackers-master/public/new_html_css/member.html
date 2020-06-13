@@ -212,7 +212,7 @@
 </head>
 <body>
                   <div>
-                  <div id="player"></div>
+                  <div style = "position:absolute; left:120px; top: 160px; z-index:1000;" id="player" id="player"></div>
                 
                     <a style = "position:absolute; left:120px; top: 640px; z-index: 1000; font-size: 25px; color:white" href="#" id="sync">Sync</a>
                     <a href="#" id="pause"></a>
@@ -227,8 +227,8 @@
                       <button style = "position:absolute; left:1280px; top: 545px; z-index: 100; font-size: 24px; border: none; background-color: #FF7777; color: white;">Send</button>
                   </form>
                   <script id="message-template" type="text/html">
-                      <div>
-                          <p>{{username}}<br>{{message}}<br><h6>{{createdAt}}</h6></p>
+                      <div style = "position:absolute; left:940px; top: 220px; z-index: 100; font-size: 18px; line-height: 15px;">
+                          <p>{{username}}<br>{{message}}<br><h6>{{createdAt}}</h6><p>
                           </div>
                   </script>
               </div>

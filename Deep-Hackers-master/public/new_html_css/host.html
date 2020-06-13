@@ -212,22 +212,25 @@
 </head>
 <body>
      <div>
-                  <div id="player"></div>
+                  <div style = "position:absolute; left:120px; top: 160px; z-index:1000;" id="player"></div>
                 
                 <a style = "position:absolute; left:280px; top: 640px; z-index: 1000; font-size: 25px; color: white"  href="#" id="pause";>Pause</a>
                 <a style = "position:absolute; left:120px; top: 640px; z-index: 1000; font-size: 25px; color:white" href="#" id="resume">Play</a>
+                <a href="#" id="sync"></a>
+                <input  style = "position:absolute; left:450px; top: 640px; z-index: 1000; font-size: 25px; color: black" name="message" id='VideoURL' placeholder="Enter Message..." autocomplete="off">
+                <a  style = "position:absolute; left:770px; top: 640px; z-index: 1000; font-size: 25px; color: black" href="#" id="new-video">New Video</a>
               </div>
                 
               <div id="messages"></div>
 
               <div>
                   <form id="message-form">
-                      <input style = "position:absolute; left: 950px; top: 550px; z-index: 100;" name="message" placeholder="Enter Message..." autocomplete="off">
+                      <input style = "position:absolute; left: 950px; top: 550px; z-index: 100;" name="message" placeholder="Enter Message..." required autocomplete="off">
                       <button style = "position:absolute; left:1280px; top: 545px; z-index: 100; font-size: 24px; border: none; background-color: #FF7777; color: white;">Send</button>
                   </form>
                   <script id="message-template" type="text/html">
-                      <div>
-                          <p>{{username}}<br>{{message}}<br><h6>{{createdAt}}<h6></p>
+                      <div style = "position:absolute; left:940px; top: 220px; z-index: 100; font-size: 18px; line-height: 15px;">
+                          <p>{{username}}<br>{{message}}<br><h6>{{createdAt}}</h6><p>
                           </div>
                   </script>
               </div>
