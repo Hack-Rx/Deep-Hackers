@@ -3,12 +3,15 @@
 <html>
     <head>
         <h1>Youtube Party</h1>
+        <title>Youtube Party</title>
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.min.css">
         <body>
-          <script>
-        </script>
+         
             
             <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-              <div>
+              
+                <div>
                   <div id="player"></div>
                 
                 <a href="#" id="pause">Pause</a>
@@ -21,14 +24,21 @@
               <div id="messages"></div>
 
               <div>
+                  <div class="compose">
                   <form id="message-form">
                       <input name="message" placeholder="Enter Message..." autocomplete="off">
                       <button>Send</button>
                   </form>
-                  <script id="message-template" type="text/html">
-                      <div>
-                          <p>{{username}}<br>{{message}}<br><h6>{{createdAt}}<h6></p>
-                          </div>
+                </div>
+                  
+                <script id="message-template" type="text/html">
+                    <div class="message">
+                        <p>
+                            <span class="message__name">{{username}}</span>
+                            <span class="message__meta">{{createdAt}}</span>
+                        </p>
+                        <p>{{message}}</p>
+                    </div>
                   </script>
               </div>
             
